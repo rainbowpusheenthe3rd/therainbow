@@ -1,0 +1,36 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "therainbow"
+version = "0.1.0"
+description = "A first-principles implementation of diffusion models (Python + Rust) — built to understand, not just to run."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [{ name = "Luke Anthony Pollen", email = "luke@pollenanalytics.com" }]
+keywords = ["diffusion", "generative", "from-scratch", "ddpm", "learning"]
+dependencies = ["numpy", "matplotlib"]
+
+[project.optional-dependencies]
+# Phase 2+ (real denoisers on images)
+torch = ["torch", "torchvision"]
+dev = ["pytest>=8", "ruff>=0.5", "scikit-learn"]
+
+[project.urls]
+Homepage = "https://github.com/rainbowpusheenthe3rd/therainbow"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py310"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q"

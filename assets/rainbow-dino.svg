@@ -1,0 +1,75 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 820 300" width="820" height="300" font-family="Segoe UI, Verdana, sans-serif" role="img" aria-label="Rainbow dinosaurs and their friends">
+  <defs>
+    <linearGradient id="rainbow" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%"  stop-color="#ff595e"/>
+      <stop offset="20%" stop-color="#ff924c"/>
+      <stop offset="40%" stop-color="#ffca3a"/>
+      <stop offset="60%" stop-color="#8ac926"/>
+      <stop offset="80%" stop-color="#1982c4"/>
+      <stop offset="100%" stop-color="#6a4c93"/>
+    </linearGradient>
+    <linearGradient id="friend" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#4cc9f0"/>
+      <stop offset="100%" stop-color="#b5179e"/>
+    </linearGradient>
+  </defs>
+
+  <!-- sky -->
+  <rect x="0" y="0" width="820" height="300" rx="18" fill="#0d1b2a"/>
+
+  <!-- rainbow arc -->
+  <g fill="none" stroke-width="12" stroke-linecap="round" opacity="0.9">
+    <path d="M120 260 A200 200 0 0 1 520 260" stroke="#ff595e"/>
+    <path d="M138 260 A182 182 0 0 1 502 260" stroke="#ff924c"/>
+    <path d="M156 260 A164 164 0 0 1 484 260" stroke="#ffca3a"/>
+    <path d="M174 260 A146 146 0 0 1 466 260" stroke="#8ac926"/>
+    <path d="M192 260 A128 128 0 0 1 448 260" stroke="#1982c4"/>
+    <path d="M210 260 A110 110 0 0 1 430 260" stroke="#6a4c93"/>
+  </g>
+
+  <!-- little stars -->
+  <g fill="#ffd166">
+    <circle cx="600" cy="60" r="3"/><circle cx="660" cy="110" r="2"/>
+    <circle cx="720" cy="70" r="3"/><circle cx="560" cy="120" r="2"/>
+    <circle cx="70" cy="80" r="2.5"/>
+  </g>
+
+  <!-- ground -->
+  <rect x="0" y="258" width="820" height="42" rx="0" fill="#1b263b"/>
+
+  <!-- long-neck rainbow dino -->
+  <g>
+    <!-- tail -->
+    <path d="M300 240 C240 235 200 232 150 250 C205 240 250 244 300 240 Z" fill="url(#rainbow)"/>
+    <!-- body -->
+    <ellipse cx="360" cy="212" rx="92" ry="52" fill="url(#rainbow)"/>
+    <!-- legs -->
+    <rect x="312" y="238" width="22" height="26" rx="9" fill="url(#rainbow)"/>
+    <rect x="392" y="238" width="22" height="26" rx="9" fill="url(#rainbow)"/>
+    <!-- neck -->
+    <path d="M420 190 C452 150 470 96 452 66 C476 96 470 158 442 200 Z" fill="url(#rainbow)"/>
+    <!-- head -->
+    <ellipse cx="458" cy="66" rx="30" ry="22" fill="url(#rainbow)"/>
+    <circle cx="470" cy="60" r="4" fill="#0d1b2a"/>
+    <path d="M486 68 q10 2 16 -2" stroke="#0d1b2a" stroke-width="3" fill="none" stroke-linecap="round"/>
+  </g>
+
+  <!-- little stego friend -->
+  <g>
+    <ellipse cx="590" cy="232" rx="58" ry="30" fill="url(#friend)"/>
+    <rect x="556" y="248" width="14" height="18" rx="6" fill="url(#friend)"/>
+    <rect x="610" y="248" width="14" height="18" rx="6" fill="url(#friend)"/>
+    <!-- plates -->
+    <g fill="#ffca3a">
+      <path d="M566 204 l10 -20 l10 20 Z"/>
+      <path d="M586 200 l11 -24 l11 24 Z"/>
+      <path d="M608 204 l10 -20 l10 20 Z"/>
+    </g>
+    <!-- head -->
+    <ellipse cx="642" cy="224" rx="20" ry="15" fill="url(#friend)"/>
+    <circle cx="650" cy="220" r="3" fill="#0d1b2a"/>
+  </g>
+
+  <!-- title -->
+  <text x="410" y="290" text-anchor="middle" fill="#e0e1dd" font-size="15" letter-spacing="1.5">multicoloured dinosaurs and their friends</text>
+</svg>

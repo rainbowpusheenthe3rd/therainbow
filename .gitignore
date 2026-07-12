@@ -1,0 +1,36 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+
+# Environments
+.venv/
+venv/
+.env
+
+# Tooling
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.coverage
+
+# Rust (Phase 4)
+target/
+Cargo.lock
+
+# IDE / OS
+.idea/
+.vscode/
+.DS_Store
+
+# Generated demo assets (keep committed ones under assets/ explicitly)
+scripts/_out/
+*.gif
+!assets/*.gif
+
+# Model weights / large binaries
+*.safetensors
+*.ckpt
+*.pt
